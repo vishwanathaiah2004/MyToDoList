@@ -12,6 +12,7 @@ A simple, lightweight ToDo List application built using just **HTML**, **CSS**, 
 - 📱 Fully responsive design
 
 ## 📸 Demo
-
+![ToDo App Screenshot](./TODOScreen1.png)
+![ToDo App Screenshot](./TODOScreen2.png)
 
 
