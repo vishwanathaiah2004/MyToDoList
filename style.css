@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaina+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Baloo Bhai 2", sans-serif;
+    ;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    background: linear-gradient(to right, #d7c2eb, #6973fb);
+    padding: 40px;
+}
+
+h2 {
+    color: aliceblue;
+    display: flex;
+    font-size: 35px;
+}
+
+h2 img {
+    margin-left: 20px;
+}
+
+.Addlist {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    border: none;
+    padding-left: 20px;
+    box-shadow: 2px, 2px, 10px rgb(71, 173, 117);
+}
+
+#InputArea {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#Add {
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background-color: rgba(0, 238, 51, 0.93);
+    border-radius: 30px;
+    font-size: 17px;
+    color: white;
+    box-shadow: 2px 2px 10px rgb(248, 228, 4);
+    transition: 0.3s ease;
+
+}
+
+#Add:hover {
+    transform: scale(1.1);
+}
+
+.AddTask {
+    width: 100%;
+    max-width: 800px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+    max-height: 500px;
+    overflow: auto;
+
+
+}
+
+
+
+
+li {
+    width: 90%;
+    height: 5%;
+    background-color: white;
+    list-style: none;
+    padding: 12px 50px;
+    border-radius: 30px;
+    color: #344141;
+    font-size: 17px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgb(65, 5, 245);
+    position: relative;
+    transition: 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.1);
+
+}
+
+
+li::before {
+    position: absolute;
+    content: '';
+    width: 29px;
+    height: 29px;
+    background-image: url("circle.png");
+    background-size: cover;
+    left: 15px;
+    background-position: center;
+
+}
+
+.checked {
+    color: #344141;
+    text-decoration: dashed;
+    background: linear-gradient(to right, #ADD8E6, #c324e7);
+}
+
+.checked::before {
+    background-image: url("checked.png");
+    width: 25px;
+    height: 25px;
+
+}
+
+li span {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+    text-align: center;
+    color: #c7dcdc;
+    border-radius: 50%;
+
+}
+
+li span:hover {
+    color: #344141;
+    background-color: white;
+
+}
